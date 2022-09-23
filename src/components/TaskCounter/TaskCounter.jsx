@@ -1,5 +1,6 @@
 import { useSelector } from 'react-redux';
 import { getTasks } from 'redux/selectors';
+import { Text } from './TaskCounterStyled';
 
 export const TaskCounter = () => {
   const tasks = useSelector(getTasks);
@@ -17,8 +18,8 @@ export const TaskCounter = () => {
 
   return (
     <div>
-      <p>Active: {count.active}</p>
-      <p>Completed: {count.completed}</p>
+      <Text>Active: {count.active}</Text>
+      <Text>Completed: {count.completed}</Text>
     </div>
   );
 };

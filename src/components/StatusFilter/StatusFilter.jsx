@@ -3,7 +3,7 @@ import { Button } from 'components/Button/Button';
 import { statusFilters } from 'redux/constants';
 import { getStatusFilter } from 'redux/selectors';
 import { setStatusFilter } from 'redux/filtersSlice';
-// import css from './StatusFilter.module.css';
+import { Box } from 'components/Box';
 
 export const StatusFilter = () => {
   const dispatch = useDispatch();
@@ -12,7 +12,7 @@ export const StatusFilter = () => {
   const handleFilterChange = filter => dispatch(setStatusFilter(filter));
 
   return (
-    <div>
+    <Box display="flex" gridGap="4px">
       <Button
         selected={filter === statusFilters.all}
         onClick={() => handleFilterChange(statusFilters.all)}
@@ -31,6 +31,6 @@ export const StatusFilter = () => {
       >
         Completed
       </Button>
-    </div>
+    </Box>
   );
 };

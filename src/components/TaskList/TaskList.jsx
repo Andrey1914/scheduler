@@ -2,6 +2,8 @@ import { useSelector } from 'react-redux';
 import { Task } from 'components/Task/Task';
 import { getTasks, getStatusFilter } from 'redux/selectors';
 import { statusFilters } from 'redux/constants';
+import { Item } from './TaskListStyled';
+import { Box } from 'components/Box';
 
 const getVisibleTasks = (tasks, statusFilter) => {
   switch (statusFilter) {
@@ -20,12 +22,12 @@ export const TaskList = () => {
   const visibleTasks = getVisibleTasks(tasks, statusFilter);
 
   return (
-    <ul>
+    <Box as="ul" display="grid" gridGap="8px" borderRadius="3px">
       {visibleTasks.map(task => (
-        <li key={task.id}>
+        <Item key={task.id}>
           <Task task={task} />
-        </li>
+        </Item>
       ))}
-    </ul>
+    </Box>
   );
 };

@@ -1,6 +1,9 @@
 import { useDispatch } from 'react-redux';
 import { Button } from 'components/Button/Button';
 import { addTask } from 'redux/tasksSlice';
+import { Box } from 'components/Box';
+import { Input } from './TaskFormStyled';
+import { MdAddTask } from 'react-icons/md';
 
 export const TaskForm = () => {
   const dispatch = useDispatch();
@@ -12,9 +15,12 @@ export const TaskForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input type="text" name="text" placeholder="Enter task text..." />
-      <Button type="submit">Add task</Button>
-    </form>
+    <Box onSubmit={handleSubmit} as="form" display="flex" gridGap="4px">
+      <Input type="text" name="text" placeholder="Enter task text..." />
+      <Button type="submit">
+        Add task
+        <MdAddTask size={24} />
+      </Button>
+    </Box>
   );
 };
