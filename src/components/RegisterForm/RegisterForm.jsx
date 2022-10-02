@@ -36,7 +36,6 @@ export const RegisterForm = () => {
           onSubmit={handleSubmit}
           autoComplete="off"
           noValidate
-          width="100%"
           sx={{ mt: 1 }}
         >
           <label>
