@@ -1,10 +1,11 @@
-import { NavLink } from 'react-router-dom';
+import { NavigationLink } from 'components/Navigation/NavigationStyled';
+import Box from '@mui/material/Box';
 
 export const AuthNav = () => {
   return (
-    <div>
-      <NavLink to="/register">Register</NavLink>
-      <NavLink to="/login">Log In</NavLink>
-    </div>
+    <Box display="flex" flexDirection="row" gap="16px">
+      <NavigationLink to="/register">Registration</NavigationLink>
+      <NavigationLink to="/login">Log In</NavigationLink>
+    </Box>
   );
 };

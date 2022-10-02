@@ -1,12 +1,21 @@
+import Box from '@mui/material/Box';
+
 export default function Home() {
   return (
-    <div>
+    <Box
+      width="75%"
+      sx={{
+        display: 'flex',
+        justifyContent: 'center',
+        marginX: 'auto',
+      }}
+    >
       <h1>
-        Task manager welcome page{' '}
+        Sheduler{' '}
         <span role="img" aria-label="Greeting icon">
           💁‍♀️
         </span>
       </h1>
-    </div>
+    </Box>
   );
 }
