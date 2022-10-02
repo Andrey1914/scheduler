@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkscheduler=self.webpackChunkscheduler||[]).push([[493],{5493:function(e,n,r){r.r(n),r.d(n,{default:function(){return s}});var c=r(184);function s(){return(0,c.jsx)("div",{children:(0,c.jsxs)("h1",{children:["Task manager welcome page"," ",(0,c.jsx)("span",{role:"img","aria-label":"Greeting icon",children:"\ud83d\udc81\u200d\u2640\ufe0f"})]})})}}}]);
-//# sourceMappingURL=493.495dff0e.chunk.js.map

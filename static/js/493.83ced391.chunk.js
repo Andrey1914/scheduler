@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkscheduler=self.webpackChunkscheduler||[]).push([[493],{5493:function(e,n,r){r.r(n),r.d(n,{default:function(){return t}});var i=r(6809),s=r(184);function t(){return(0,s.jsx)(i.Z,{width:"75%",sx:{display:"flex",justifyContent:"center",marginX:"auto"},children:(0,s.jsxs)("h1",{children:["Sheduler"," ",(0,s.jsx)("span",{role:"img","aria-label":"Greeting icon",children:"\ud83d\udc81\u200d\u2640\ufe0f"})]})})}}}]);
+//# sourceMappingURL=493.83ced391.chunk.js.map
