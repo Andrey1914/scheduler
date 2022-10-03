@@ -11,7 +11,7 @@ export const Task = ({ id, text }) => {
   const handleDelete = () => dispatch(deleteTask(id));
 
   return (
-    <Box display="flex" alignItems="center" gridGap="12px">
+    <Box display="flex" alignItems="center" gap="12px">
       <Text>{text}</Text>
       <Button type="button" onClick={handleDelete} variant="outlined">
         <MdDelete size={24} />

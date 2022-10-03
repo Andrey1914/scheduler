@@ -2,7 +2,7 @@ import { useSelector } from 'react-redux';
 import { Task } from 'components/Task/Task';
 import { selectAllTasks } from 'redux/tasks/selectors';
 import { Item } from './TaskListStyled';
-import { Box } from 'components/Box';
+import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import { Global } from '@emotion/react';
 import { GlobalStyles } from '../GlobalStyles';
@@ -14,19 +14,19 @@ export const TaskList = () => {
     <Container maxWidth="xs">
       <Global styles={GlobalStyles} />
       <Box
-        as="ul"
-        display="grid"
-        gridGap="8px"
-        borderRadius="3px"
-        listStyle="none"
-        m="0"
-        p="0"
+        sx={{
+          marginY: 2,
+          display: 'flex',
+          flexDirection: 'column',
+        }}
       >
-        {tasks.map(({ id, text }) => (
-          <Item key={id}>
-            <Task id={id} text={text} />
-          </Item>
-        ))}
+        <Box as="ul" display="grid" gap="12px">
+          {tasks.map(({ id, text }) => (
+            <Item key={id} elevation={1}>
+              <Task id={id} text={text} />
+            </Item>
+          ))}
+        </Box>
       </Box>
     </Container>
   );

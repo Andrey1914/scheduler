@@ -40,7 +40,7 @@ export const TaskEditor = () => {
         >
           <TextField
             name="text"
-            label="Your todo..."
+            label="Your task..."
             margin="normal"
             fullWidth
           />

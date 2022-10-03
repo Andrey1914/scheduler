@@ -1,6 +1,8 @@
 import { NavigationLink } from './NavigationStyled';
 import { useAuth } from 'hooks/useAuth';
 import Box from '@mui/material/Box';
+import { BsListTask } from 'react-icons/bs';
+import { FaHome } from 'react-icons/fa';
 
 export const Navigation = () => {
   const { isLoggedIn } = useAuth();
@@ -14,8 +16,16 @@ export const Navigation = () => {
         gap: '24px',
       }}
     >
-      <NavigationLink to="/">Home</NavigationLink>
-      {isLoggedIn && <NavigationLink to="/tasks">Tasks</NavigationLink>}
+      <NavigationLink to="/">
+        {/* Home */}
+        <FaHome size={24} />
+      </NavigationLink>
+      {isLoggedIn && (
+        <NavigationLink to="/tasks">
+          {/* Tasks */}
+          <BsListTask size={24} />
+        </NavigationLink>
+      )}
     </Box>
   );
 };
