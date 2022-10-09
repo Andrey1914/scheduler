@@ -4,6 +4,8 @@ import { TaskList } from 'components/TaskList/TaskList';
 import { TaskEditor } from 'components/TaskEditor/TaskEditor';
 import { fetchTasks } from 'redux/tasks/operations';
 import { selectLoading } from 'redux/tasks/selectors';
+import { Image } from './HomeStyled';
+import background from '../../components/images/bg-image.jpg';
 
 export default function Tasks() {
   const dispatch = useDispatch();
@@ -15,9 +17,11 @@ export default function Tasks() {
 
   return (
     <>
-      <TaskEditor />
-      <div>{isLoading && 'Request in progress...'}</div>
-      <TaskList />
+      <Image style={{ backgroundImage: `url(${background})` }}>
+        <TaskEditor />
+        <div>{isLoading && 'Request in progress...'}</div>
+        <TaskList />
+      </Image>
     </>
   );
 }

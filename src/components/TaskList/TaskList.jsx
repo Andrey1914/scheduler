@@ -22,7 +22,7 @@ export const TaskList = () => {
       >
         <Box as="ul" display="grid" gap="12px">
           {tasks.map(({ id, text }) => (
-            <Item key={id} elevation={1}>
+            <Item component="li" key={id} elevation={3}>
               <Task id={id} text={text} />
             </Item>
           ))}

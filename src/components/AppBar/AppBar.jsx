@@ -7,7 +7,7 @@ import Box from '@mui/material/Box';
 export const AppBar = () => {
   const { isLoggedIn } = useAuth();
   return (
-    <Box component="header" display="flex" backgroundColor="#1976d2">
+    <Box component="header" display="flex" backgroundColor="#631dbf">
       <Box
         width="75%"
         sx={{

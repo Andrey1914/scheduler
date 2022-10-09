@@ -2,12 +2,13 @@ import Box from '@mui/material/Box';
 import { Image } from './HomeStyled';
 import { Global } from '@emotion/react';
 import { GlobalStyles } from '../GlobalStyles';
+import background from '../../components/images/bg-image.jpg';
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Global styles={GlobalStyles} />
-      <Image>
+      <Image style={{ backgroundImage: `url(${background})` }}>
         <Box
           width="75%"
           sx={{
@@ -24,6 +25,6 @@ export default function Home() {
           </h1>
         </Box>
       </Image>
-    </div>
+    </>
   );
 }
