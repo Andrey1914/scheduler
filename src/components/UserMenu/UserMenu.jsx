@@ -23,8 +23,8 @@ export const UserMenu = () => {
       </Box>
       <Button
         type="button"
-        // variant="contained"
-        variant="outlined"
+        variant="contained"
+        // variant="outlined"
         sx={{ p: 1 }}
         onClick={() => dispatch(logOut())}
       >

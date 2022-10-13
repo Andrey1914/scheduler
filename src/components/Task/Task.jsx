@@ -13,7 +13,7 @@ export const Task = ({ id, text }) => {
   return (
     <Box display="flex" alignItems="center" gap="12px">
       <Text>{text}</Text>
-      <Button type="button" onClick={handleDelete} variant="outlined">
+      <Button type="button" onClick={handleDelete} variant="contained">
         <MdDelete size={24} />
       </Button>
     </Box>

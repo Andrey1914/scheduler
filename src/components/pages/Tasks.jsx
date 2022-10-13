@@ -5,7 +5,7 @@ import { TaskEditor } from 'components/TaskEditor/TaskEditor';
 import { fetchTasks } from 'redux/tasks/operations';
 import { selectLoading } from 'redux/tasks/selectors';
 import { Image } from './HomeStyled';
-import background from '../../components/images/bg-image.jpg';
+import background from '../../components/images/bg-img3.jpg';
 
 export default function Tasks() {
   const dispatch = useDispatch();

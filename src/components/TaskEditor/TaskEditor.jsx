@@ -48,6 +48,7 @@ export const TaskEditor = () => {
             type="submit"
             fullWidth
             variant="contained"
+            // variant="outlined"
             sx={{ mt: 2, mb: 2, gap: 2 }}
           >
             Add todo

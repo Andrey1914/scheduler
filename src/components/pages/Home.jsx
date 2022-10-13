@@ -2,7 +2,7 @@ import Box from '@mui/material/Box';
 import { Image } from './HomeStyled';
 import { Global } from '@emotion/react';
 import { GlobalStyles } from '../GlobalStyles';
-import background from '../../components/images/bg-image.jpg';
+import background from '../../components/images/bg-img3.jpg';
 
 export default function Home() {
   return (
@@ -19,9 +19,9 @@ export default function Home() {
         >
           <h1>
             Sheduler{' '}
-            <span role="img" aria-label="Greeting icon">
+            {/* <span role="img" aria-label="Greeting icon">
               💁‍♀️
-            </span>
+            </span> */}
           </h1>
         </Box>
       </Image>
