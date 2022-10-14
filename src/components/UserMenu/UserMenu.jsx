@@ -18,18 +18,16 @@ export const UserMenu = () => {
         gap: '24px',
       }}
     >
-      <Box component="p" sx={{ m: 0 }}>
+      <Box component="p" sx={{ m: 0 }} color="#fff">
         Welcome, {user.name}
       </Box>
       <Button
         type="button"
         variant="contained"
-        // variant="outlined"
         sx={{ p: 1 }}
         onClick={() => dispatch(logOut())}
       >
         <TbLogout size={24} />
-        {/* Logout */}
       </Button>
     </Box>
   );

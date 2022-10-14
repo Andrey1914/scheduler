@@ -1,5 +1,5 @@
 import Box from '@mui/material/Box';
-import { Image } from './HomeStyled';
+import { Image, Title } from './HomeStyled';
 import { Global } from '@emotion/react';
 import { GlobalStyles } from '../GlobalStyles';
 import background from '../../components/images/bg-img3.jpg';
@@ -17,12 +17,12 @@ export default function Home() {
             marginX: 'auto',
           }}
         >
-          <h1>
+          <Title>
             Sheduler{' '}
             {/* <span role="img" aria-label="Greeting icon">
               💁‍♀️
             </span> */}
-          </h1>
+          </Title>
         </Box>
       </Image>
     </>
