@@ -2,8 +2,8 @@ import styled from '@emotion/styled';
 
 export const Image = styled.div`
   padding-top: 20px;
-  width: 100%;
-  height: 864px;
+  width: 100vw;
+  height: 100vh;
   background-size: cover;
 `;
 

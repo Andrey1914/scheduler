@@ -15,8 +15,9 @@ export const AppBar = () => {
           flexDirection: 'row',
           alignItems: 'center',
           justifyContent: 'space-between',
-          p: 3,
+          py: 3,
           marginX: 'auto',
+          gap: 5,
         }}
       >
         <Navigation />

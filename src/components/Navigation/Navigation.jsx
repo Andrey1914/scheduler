@@ -13,7 +13,7 @@ export const Navigation = () => {
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'center',
-        gap: '24px',
+        gap: '20px',
       }}
     >
       <NavigationLink to="/">

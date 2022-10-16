@@ -15,7 +15,7 @@ export const UserMenu = () => {
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'center',
-        gap: '24px',
+        gap: '16px',
       }}
     >
       <Box component="p" sx={{ m: 0 }} color="#fff">
